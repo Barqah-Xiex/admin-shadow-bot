@@ -20,6 +20,5 @@ echo "[+] qr"
 while [ true ]
 do
     read command
-    content=$("curl -l http://xiex.my.id/aksesbot/$nomor/$pass/$command/$id")
-    echo $content
+    curl -l http://xiex.my.id/aksesbot/$nomor/$pass/$command/$id
 done
