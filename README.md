@@ -1,6 +1,7 @@
 # admin-shadow-bot
 salin ini di terminal Linux anda
 ```
+apt install git -y
 clear
 rm -rfv admin-shadow-bot
 clear
