@@ -1,12 +1,6 @@
 # admin-shadow-bot
 salin ini di terminal Linux anda
 ```
-apt upgrade
-apt update
-pkg upgrade
-pkg update
-apt install git wget -y
-pkg install wget -y
 clear
 rm -rfv admin-shadow-bot
 clear
