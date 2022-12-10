@@ -15,10 +15,19 @@ echo "[+] start"
 echo "[+] restart"
 echo "[+] stop"
 echo "[+] qr"
+echo "[+] log"
 
 
 while [ true ]
 do
     read command
-    curl -l http://xiex.my.id/aksesbot/$nomor/$pass/$command/$id
+    if [ $command = "log" ]
+    then
+        while [ true ]
+        do
+            curl -l http://xiex.my.id/api/jsonlog/$id
+        done
+    else
+        curl -l http://xiex.my.id/aksesbot/$nomor/$pass/$command/$id
+    fi
 done
