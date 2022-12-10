@@ -25,7 +25,13 @@ do
     then
         while [ true ]
         do
-            curl -l http://xiex.my.id/api/jsonlog/$id
+            
+            if [ $isi = "$( curl -l http://xiex.my.id/api/jsonlog/$id )"]
+            then
+            else
+                echo "$( curl -l http://xiex.my.id/api/jsonlog/$id )";
+            fi
+            isi="$( curl -l http://xiex.my.id/api/jsonlog/$id )"
         done
     else
         curl -l http://xiex.my.id/aksesbot/$nomor/$pass/$command/$id
