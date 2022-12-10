@@ -29,7 +29,7 @@ do
             
             if [[ $isi != "$( curl http://xiex.my.id/api/jsonlog/$id )" ]]
             then
-                 curl http://xiex.my.id/api/jsonlog/$id
+                 curl -l http://xiex.my.id/api/jsonlog/$id;
             fi
             isi="$( curl http://xiex.my.id/api/jsonlog/$id )"
         done
