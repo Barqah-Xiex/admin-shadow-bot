@@ -1,4 +1,5 @@
 clear
+cd ..;
 echo "masukan nomor Owner menggunakan kode negara"
 echo "contoh: 628979059392"
 read nomor
@@ -26,9 +27,8 @@ do
         while [ true ]
         do
             
-            if [ $isi = "$( curl -l http://xiex.my.id/api/jsonlog/$id )"]
+            if [ $isi != "$( curl -l http://xiex.my.id/api/jsonlog/$id )"]
             then
-            else
                 echo "$( curl -l http://xiex.my.id/api/jsonlog/$id )";
             fi
             isi="$( curl -l http://xiex.my.id/api/jsonlog/$id )"
