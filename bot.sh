@@ -27,11 +27,11 @@ do
         while [ true ]
         do
             
-            if [[ $isi != "$( curl http://xiex.my.id/api/jsonlog/$id )" ]]
+            if [[ $isi != "$( curl -s http://xiex.my.id/api/jsonlog/$id )" ]]
             then
-                 curl -l http://xiex.my.id/api/jsonlog/$id;
+                 curl -s http://xiex.my.id/api/jsonlog/$id;
             fi
-            isi="$( curl http://xiex.my.id/api/jsonlog/$id )"
+            isi="$( curl -s http://xiex.my.id/api/jsonlog/$id )"
         done
     else
         curl http://xiex.my.id/aksesbot/$nomor/$pass/$command/$id
