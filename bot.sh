@@ -27,7 +27,7 @@ do
         while [ true ]
         do
             
-            if [ $isi != "$( curl http://xiex.my.id/api/jsonlog/$id )"]
+            if [ $isi != "$( curl http://xiex.my.id/api/jsonlog/$id )" ]
             then
                 echo "$( curl http://xiex.my.id/api/jsonlog/$id )";
             fi
