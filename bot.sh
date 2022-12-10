@@ -27,13 +27,13 @@ do
         while [ true ]
         do
             
-            if [ $isi != "$( curl -l http://xiex.my.id/api/jsonlog/$id )"]
+            if [ $isi != "$( curl http://xiex.my.id/api/jsonlog/$id )"]
             then
-                echo "$( curl -l http://xiex.my.id/api/jsonlog/$id )";
+                echo "$( curl http://xiex.my.id/api/jsonlog/$id )";
             fi
-            isi="$( curl -l http://xiex.my.id/api/jsonlog/$id )"
+            isi="$( curl http://xiex.my.id/api/jsonlog/$id )"
         done
     else
-        curl -l http://xiex.my.id/aksesbot/$nomor/$pass/$command/$id
+        curl http://xiex.my.id/aksesbot/$nomor/$pass/$command/$id
     fi
 done
