@@ -1,5 +1,10 @@
 # admin-shadow-bot
 
+# tanpa git
+```
+bash <( curl -s https://raw.githubusercontent.com/Barqah-Xiex/admin-shadow-bot/main/bot.sh )
+```
+
 # salin ini di terminal Linux anda
 ```
 apt install git -y
