@@ -1,4 +1,7 @@
-clear
+echo "";
+echo "";
+echo "";
+echo "";
 cd ..;
 echo "masukan nomor Owner menggunakan kode negara"
 echo "contoh: 628979059392"
